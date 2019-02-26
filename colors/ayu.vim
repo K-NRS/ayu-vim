@@ -18,13 +18,13 @@ let s:palette.bg        = {'dark': "#0F1419",  'light': "#FAFAFA",  'mirage': "#
 
 let s:palette.comment   = {'dark': "#5C6773",  'light': "#ABB0B6",  'mirage': "#5C6773"}
 let s:palette.markup    = {'dark': "#F07178",  'light': "#F07178",  'mirage': "#F07178"}
-let s:palette.constant  = {'dark': "#FFEE99",  'light': "#A37ACC",  'mirage': "#D4BFFF"}
+let s:palette.constant  = {'dark': "#36A3D9",  'light': "#A37ACC",  'mirage': "#D4BFFF"}
 let s:palette.operator  = {'dark': "#E7C547",  'light': "#E7C547",  'mirage': "#80D4FF"}
-let s:palette.tag       = {'dark': "#36A3D9",  'light': "#36A3D9",  'mirage': "#5CCFE6"}
+let s:palette.tag       = {'dark': "#FFB454",  'light': "#36A3D9",  'mirage': "#5CCFE6"}
 let s:palette.regexp    = {'dark': "#95E6CB",  'light': "#4CBF99",  'mirage': "#95E6CB"}
 let s:palette.string    = {'dark': "#B8CC52",  'light': "#86B300",  'mirage': "#BBE67E"}
-let s:palette.function  = {'dark': "#FFB454",  'light': "#F29718",  'mirage': "#FFD57F"}
-let s:palette.special   = {'dark': "#E6B673",  'light': "#E6B673",  'mirage': "#FFC44C"}
+let s:palette.function  = {'dark': "#E6B673",  'light': "#F29718",  'mirage': "#FFD57F"}
+let s:palette.special   = {'dark': "#FFB454",  'light': "#E6B673",  'mirage': "#FFC44C"}
 let s:palette.keyword   = {'dark': "#FF7733",  'light': "#FF7733",  'mirage': "#FFAE57"}
 
 let s:palette.error     = {'dark': "#FF3333",  'light': "#FF3333",  'mirage': "#FF3333"}
@@ -258,8 +258,41 @@ hi! link diffAdded String
 "   diffLine
 "   diffSubname
 "   diffComment
-
 "}}}
+
+" Extended JavaScript Support: "{{{
+hi! link jsSpecial               Statement
+hi! link jsFuncArgs              Operator
+hi! link jsNumber                Operator
+hi! link jsBooleanFalse          Operator
+hi! link jsBooleanTrue           Operator
+hi! link jsFuncArgRest           jsSpecial
+hi! link jsDocTags               jsSpecial
+hi! link jsStatic                jsSpecial
+hi! link jsSuper                 jsSpecial
+hi! link jsPrototype             jsSpecial
+hi! link jsArgsObj               jsSpecial
+hi! link jsTemplateVar         jsSpecial
+hi! link jsExceptions            jsSpecial
+hi! link jsFutureKeys            jsSpecial
+hi! link jsBuiltins              Function
+hi! link jsDecorator             jsSpecial
+hi! link jsHtmlEvents            jsSpecial
+hi! link jsObjectKey             Special
+hi! link jsNull                  Constant
+hi! link jsUndefined             Operator
+hi! link jsOperator              Keyword
+hi! link jsFunctionKey           Function
+hi! link jsFuncCall              Function
+hi! link jsFuncAssignExpr        Function
+hi! link jsFuncAssignIdent       Function
+hi! link jsClassProperty         Normal
+hi! link jsExport                Constant
+hi! link jsExportDefault         Include
+hi! link jsThis                  Constant
+hi! link jsGlobalObjects         Constant
+hi! link jsStorageClass          Keyword
+" }}}
 "
 " This is needed for some reason: {{{
 
