@@ -35,6 +35,8 @@ let s:palette.line      = {'dark': "#151A1E",  'light': "#F3F3F3",  'mirage': "#
 let s:palette.selection = {'dark': "#1F2B3A",  'light': "#F0EEE4",  'mirage': "#343F4C"}
 let s:palette.fg        = {'dark': "#E6E1CF",  'light': "#5C6773",  'mirage': "#D9D7CE"}
 let s:palette.fg_idle   = {'dark': "#3E4B59",  'light': "#828C99",  'mirage': "#607080"}
+let s:palette.nerdtree  = {'dark': "#76818D",  'light': "#828C99",  'mirage': "#607080"}
+let s:palette.nerdtree_openable  = {'dark': "#CED1D3",  'light': "#828C99",  'mirage': "#607080"}
 
 "}}}
 
@@ -218,15 +220,15 @@ endif
 
 " NerdTree
 " ---------
-exe "hi! NERDTreeOpenable"          .s:fg_fg_idle     .s:bg_none        .s:fmt_none
+exe "hi! NERDTreeOpenable"          .s:fg_nerdtree_openable     .s:bg_none        .s:fmt_none
 exe "hi! NERDTreeClosable"          .s:fg_accent      .s:bg_none        .s:fmt_none
 " exe "hi! NERDTreeBookmarksHeader"   .s:fg_pink        .s:bg_none        .s:fmt_none
 " exe "hi! NERDTreeBookmarksLeader"   .s:fg_bg          .s:bg_none        .s:fmt_none
 " exe "hi! NERDTreeBookmarkName"      .s:fg_keyword     .s:bg_none        .s:fmt_none
 " exe "hi! NERDTreeCWD"               .s:fg_pink        .s:bg_none        .s:fmt_none
-exe "hi! NERDTreeUp"                .s:fg_fg_idle    .s:bg_none        .s:fmt_none
-exe "hi! NERDTreeDir"               .s:fg_fg_idle    .s:bg_none        .s:fmt_none
-exe "hi! NERDTreeFile"              .s:fg_fg_idle    .s:bg_none        .s:fmt_none
+exe "hi! NERDTreeUp"                .s:fg_nerdtree    .s:bg_none        .s:fmt_none
+exe "hi! NERDTreeDir"               .s:fg_nerdtree    .s:bg_none        .s:fmt_none
+exe "hi! NERDTreeFile"              .s:fg_nerdtree    .s:bg_none        .s:fmt_none
 exe "hi! NERDTreeDirSlash"          .s:fg_guide      .s:bg_none        .s:fmt_none
 
 
