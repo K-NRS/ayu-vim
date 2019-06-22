@@ -274,7 +274,7 @@ hi! link jsStatic                jsSpecial
 hi! link jsSuper                 jsSpecial
 hi! link jsPrototype             jsSpecial
 hi! link jsArgsObj               jsSpecial
-hi! link jsTemplateVar         jsSpecial
+hi! link jsTemplateVar           jsSpecial
 hi! link jsExceptions            jsSpecial
 hi! link jsFutureKeys            jsSpecial
 hi! link jsBuiltins              Function
@@ -293,7 +293,7 @@ hi! link jsExport                Constant
 hi! link jsExportDefault         Include
 hi! link jsThis                  Constant
 hi! link jsGlobalObjects         Constant
-hi! link jsStorageClass          Keyword
+hi! link jsStorageClass          Include
 " }}}
 "
 " This is needed for some reason: {{{
