@@ -35,8 +35,6 @@ let s:palette.line      = {'dark': "#00010A",  'light': "#F3F3F3",  'mirage': "#
 let s:palette.selection = {'dark': "#273747",  'light': "#F0EEE4",  'mirage': "#343F4C"}
 let s:palette.fg        = {'dark': "#B3B1AD",  'light': "#5C6773",  'mirage': "#D9D7CE"}
 let s:palette.fg_idle   = {'dark': "#3E4B59",  'light': "#828C99",  'mirage': "#607080"}
-let s:palette.nerdtree  = {'dark': "#76818D",  'light': "#828C99",  'mirage': "#607080"}
-let s:palette.nerdtree_openable  = {'dark': "#CED1D3",  'light': "#828C99",  'mirage': "#607080"}
 
 "}}}
 
@@ -230,7 +228,7 @@ endif
 
 " NerdTree
 " ---------
-exe "hi! NERDTreeOpenable"          .s:fg_nerdtree_openable     .s:bg_none        .s:fmt_none
+exe "hi! NERDTreeOpenable"          .s:fg_fg_idle     .s:bg_none        .s:fmt_none
 exe "hi! NERDTreeClosable"          .s:fg_accent      .s:bg_none        .s:fmt_none
 " exe "hi! NERDTreeBookmarksHeader"   .s:fg_pink        .s:bg_none        .s:fmt_none
 " exe "hi! NERDTreeBookmarksLeader"   .s:fg_bg          .s:bg_none        .s:fmt_none
@@ -270,45 +268,11 @@ hi! link diffAdded String
 "   diffLine
 "   diffSubname
 "   diffComment
-"}}}
 
-" Extended JavaScript Support: "{{{
-hi! link jsSpecial               Statement
-hi! link jsFuncArgs              Operator
-hi! link jsNumber                Operator
-hi! link jsBooleanFalse          Operator
-hi! link jsBooleanTrue           Operator
-hi! link jsFuncArgRest           jsSpecial
-hi! link jsDocTags               jsSpecial
-hi! link jsStatic                jsSpecial
-hi! link jsSuper                 jsSpecial
-hi! link jsPrototype             jsSpecial
-hi! link jsArgsObj               jsSpecial
-hi! link jsTemplateVar           jsSpecial
-hi! link jsExceptions            jsSpecial
-hi! link jsFutureKeys            jsSpecial
-hi! link jsBuiltins              Function
-hi! link jsDecorator             jsSpecial
-hi! link jsHtmlEvents            jsSpecial
-hi! link jsObjectKey             Special
-hi! link jsNull                  Constant
-hi! link jsUndefined             Operator
-hi! link jsOperator              Keyword
-hi! link jsFunctionKey           Function
-hi! link jsFuncCall              Function
-hi! link jsFuncAssignExpr        Function
-hi! link jsFuncAssignIdent       Function
-hi! link jsClassProperty         Normal
-hi! link jsExport                Constant
-hi! link jsExportDefault         Include
-hi! link jsThis                  Constant
-hi! link jsGlobalObjects         Constant
-hi! link jsStorageClass          Include
-" }}}
+"}}}
 "
 " This is needed for some reason: {{{
 
 let &background = s:style
 
 " }}}
-
