@@ -311,3 +311,4 @@ hi! link jsStorageClass          Include
 let &background = s:style
 
 " }}}
+
